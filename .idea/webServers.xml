@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0d98dd5d-97bd-4963-b4a3-fe8667fc7f5f" name="110">
+        <fileTransfer rootFolder="/BiO/Serve/Httpd/10kG_survey_manage" accessType="SFTP" host="210.218.217.110" port="3030" sshConfigId="ef5e2d91-3f4b-4241-a6df-50a880156371" sshConfig="root@210.218.217.110:3030 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
