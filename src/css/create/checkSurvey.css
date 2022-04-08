@@ -1,0 +1,70 @@
+.check-survey .sect-02{
+    text-align: center;
+}
+.check-survey .sect-03{
+    text-align: center;
+    margin-top: 9px;
+}
+.check-survey .sect-03 .cont-02{
+    margin-top: 9px;
+}
+
+.check-survey .section-01 ul{
+    list-style: none;
+}
+
+.check-survey .section-01 li{
+    float: left;
+}
+
+.check-survey .cont-01{
+    display: flex;
+    flex-direction: column;
+}
+
+.check-category{
+    margin-bottom: 60px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+.check-category .pagination{
+    cursor: default;
+    display: inline-block;
+    width: 100%;
+}
+.check-category .pagination ul{
+    list-style: none;
+    display: inline-block;
+}
+.check-category .pagination li{
+    float: left;
+    margin-right: 12px;
+}
+.check-category .pagination li:hover{
+    color:blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.check-category .category{
+    border: 1px solid;
+    padding:26px 32px;
+    margin:22px 32px;
+
+}
+.check-question{
+    margin: 3px 32px;
+    padding: 0 32px;
+}
+.check-question .question{
+   cursor:default;
+}
+
+.check-answer{
+    margin:0 32px;
+}
+.check-answer .answer{
+    cursor:default;
+}
+

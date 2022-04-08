@@ -11,30 +11,23 @@ import { Route, Router, Switch, Redirect } from 'react-router-dom';
 import Main from './Main';
 
 import create from './create/CreateMain.js';
-// import AdminMain from "./component/admin/AdminMain";
-//
-// import SurveyMain from "./component/survey/SurveyMain";
-// import Qtype01 from './component/survey/ApplyInfoForm';
-// import answer from './component/survey/answer/SurveyAnswer';
-// import edit from './component/survey/edit/SurveyEdit';
-// import make from './component/survey/make/SurveyMake';
+import metaData from './create/InsertSurveyMetaData.js';
+import check from './create/CheckSurvey.js';
 
-// import tmp from "./tmp/Main.js";
-// import CA00 from "./tmp/CA00.js";
-// import CA01 from "./tmp/CA01.js";
-//
-//
-// import CA00_t from "./tmp_test/CA00.js";
-// import CA01_t from "./tmp_test/CA01.js";
+import review from './review/ReviewMain.js';
+import reviewSurvey from './review/ReviewSurvey.js';
 
 function App(){
-
 
     return(
         <div className="app">
             <Switch>
                 <Route path="/" component={Main} exact={true}/>
                 <Route path="/create" component={create} exact={true}/>
+                <Route path="/create/metaData/:filename" component={metaData} exact={true}/>
+                <Route path="/create/check/:fileIndex" component={check} exact={true}/>
+                <Route path="/review" component={review} exact={true}/>
+                <Route path="/review/survey/:index" component={reviewSurvey} exact={true}/>
             </Switch>
             {/*<Switch>*/}
             {/*    <Route path="/" component={tmp} exact={true}/>*/}
