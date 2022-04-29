@@ -1,0 +1,35 @@
+.review-category{
+    display: flex;
+    flex-direction: column;
+}
+/**/
+.review-category .pagination ul{
+    list-style: none;
+    cursor: default;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    padding:0;
+    justify-content: space-between;
+}
+.review-category .pagination li{
+    padding:0 12px;
+}
+.review-category .pagination li:hover{
+    cursor: pointer;
+}
+
+.review-category .pagination .active{
+    font-weight: bold;
+    border-bottom: blue 1px solid;
+}
+
+.review-category .ca-nm{
+    background: #ededed;
+    width: 80%;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 35px auto;
+    font-size: 18px;
+}

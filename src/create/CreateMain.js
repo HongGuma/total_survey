@@ -137,7 +137,7 @@ const FileInOutLog = () => {
     const [logList,setLogList] = useState(null);
     useEffect(()=>{
         loadLog().then(res=>{
-            console.log(res);
+            // console.log(res);
             if(res.data == '-1'){
                 setLogList(null);
             }else{

@@ -27,7 +27,7 @@ const CheckCategory = ({data,qList,saList}) => {
     return(
         <div className="check-category">
             {categoryList != null && <>
-                <Pagination numbers={categoryList} setNum={ChangeCategoryNum}/>
+                <Pagination numbers={categoryList} setNum={ChangeCategoryNum} currentNum={currentNum}/>
                 <div className="sect-01">
                     {categoryList.map((item,idx)=>(item.id == currentNum &&
                         <div className="sect-01-cont-01" key={idx}>
@@ -36,19 +36,19 @@ const CheckCategory = ({data,qList,saList}) => {
                         </div>
                     ))}
                 </div>
-                <Pagination numbers={categoryList} setNum={ChangeCategoryNum}/>
+                <Pagination numbers={categoryList} setNum={ChangeCategoryNum} currentNum={currentNum}/>
             </>}
         </div>
     )
 }
 
-const Pagination = ({numbers, setNum}) => {
+const Pagination = ({numbers, setNum, currentNum}) => {
     function clickNum(num){
         setNum(num);
     }
     return(
         <div className="pagination">
-            <ul>{numbers.map((el,idx) => <li key={idx} onClick={()=>clickNum(idx)}>{idx}</li>)}</ul>
+            <ul>{numbers.map((el,idx) => <li key={idx} className={idx == currentNum ? "active" : null} onClick={()=>clickNum(idx)}>{idx}</li>)}</ul>
         </div>
     )
 }

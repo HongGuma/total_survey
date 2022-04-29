@@ -15,7 +15,7 @@ import metaData from './create/InsertSurveyMetaData.js';
 import check from './create/CheckSurvey.js';
 
 import review from './review/ReviewMain.js';
-import reviewSurvey from './review/ReviewSurvey.js';
+import reviewSurvey from './review/survey/ReviewSurvey.js';
 
 function App(){
 
@@ -27,7 +27,7 @@ function App(){
                 <Route path="/create/metaData/:filename" component={metaData} exact={true}/>
                 <Route path="/create/check/:fileIndex" component={check} exact={true}/>
                 <Route path="/review" component={review} exact={true}/>
-                <Route path="/review/survey/:index" component={reviewSurvey} exact={true}/>
+                <Route path="/review/survey/:srindex" component={reviewSurvey} exact={true}/>
             </Switch>
             {/*<Switch>*/}
             {/*    <Route path="/" component={tmp} exact={true}/>*/}

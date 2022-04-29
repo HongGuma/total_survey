@@ -1,8 +1,9 @@
-.edit-main .select-wrap{
+.review-main .select-wrap{
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
-.edit-main .select-wrap select{
+.review-main .select-wrap select{
     -webkit-box-align: center;
     background-color: rgb(255, 255, 255);
     border-color: rgb(204, 204, 204);
@@ -17,6 +18,10 @@
     box-sizing: border-box;
     outline: 0px !important;
     padding: 8px 16px;
+}
+.meta-data-wrap{
+    width: 95%;
+    margin:0 auto;
 }
 .show-meta-data{
     display: flex;

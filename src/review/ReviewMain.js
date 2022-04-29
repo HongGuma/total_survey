@@ -11,7 +11,7 @@ import axios from 'axios';
 import { useHistory } from "react-router-dom";
 
 import ShowMetaData from './ShowMetaData.js';
-import '../css/edit/editMain.css';
+import '../css/review/reviewMain.css';
 
 const ReviewMain = () => {
     const history = useHistory();
@@ -43,7 +43,7 @@ const ReviewMain = () => {
     }
 
     return(
-        <div className="edit-main">
+        <div className="review-main">
             <div> <button onClick={GoBack}>뒤로가기</button></div>
             <h1 style={{textAlign:"center"}}>설문지 확인하기</h1>
             <div className="select-wrap">
@@ -55,7 +55,9 @@ const ReviewMain = () => {
                     </select>
                 }
             </div>
-            <ShowMetaData tag={selectTag}/>
+            <div className="meta-data-wrap">
+                <ShowMetaData tag={selectTag}/>
+            </div>
         </div>
     )
 }

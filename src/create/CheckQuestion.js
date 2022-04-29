@@ -30,11 +30,7 @@ const CheckQuestion = ({data,caId,saList}) => {
             {questionList != null && questionList.map((item,idx)=>(
                 item.ca == caID &&
                 <div className="cont-01" key={idx}>
-                    {item.sub_id == 0 ?
-                        <p className="question" onClick={()=>ShowAnswerHandler(item.id,item.sub_id)}>(tag : {item.q_tag}) {item.id}. {item.q_kr.replace(/[\d\.]/g,'')} ({item.q_en.replace(/[\d\.]/g,'')} )</p>
-                        :
-                        <p className="question" onClick={()=>ShowAnswerHandler(item.id,item.sub_id)}>(tag : {item.q_tag}) {item.id}-{item.sub_id}. {item.q_kr.replace(/[\d\.]/g,'')} ({item.q_en.replace(/[\d\.]/g,'')} )</p>
-                    }
+                    <p className="q-text" onClick={()=>ShowAnswerHandler(item.id,item.sub_id)}>(tag : {item.q_tag}) {item.id}-{item.sub_id}. {item.q_kr.replace(/\d{1,3}./,'')} ({item.q_en} )</p>
                     <CheckAnswer data={saList} qID={item.id} qSubID={item.sub_id}/>
                 </div>
             ))}
