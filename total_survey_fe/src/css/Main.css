@@ -1,0 +1,10 @@
+.main {
+  text-align: center;
+}
+.sr-mk-btn {
+  cursor: default;
+  margin: 6px 0;
+}
+.sr-mk-btn:hover {
+  color: blue;
+}

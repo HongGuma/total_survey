@@ -1,0 +1,58 @@
+.create-main {
+  text-align: center;
+  cursor: default;
+}
+
+.create-main .sect-01-cont-01 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.create-main .sect-01-cont-01 p {
+  margin-right: 20px;
+}
+
+.create-main .sect-02 p:hover {
+  color: blue;
+}
+
+.file-list-wrap {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.file-list-wrap ul {
+  border: 1px solid;
+  cursor: default;
+  list-style: none;
+  padding: 30px 0;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.file-list-wrap li {
+  padding: 10px 30px;
+}
+
+.file-list-wrap li:hover {
+  background-color: #faec9b;
+  cursor: pointer;
+}
+
+.file-list-wrap .sect-02-cont-01 button {
+  margin: 0 12px;
+}
+
+.log-wrap {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.log-wrap table {
+  margin: 0 auto;
+}
+
+.log-wrap table tbody td {
+  width: 170px;
+}

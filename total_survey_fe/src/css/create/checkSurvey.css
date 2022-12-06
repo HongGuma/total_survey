@@ -1,0 +1,123 @@
+.check-survey .sect-01-top {
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+}
+.check-survey .sect-01-top .cont-03:hover {
+  color: blue;
+  cursor: pointer;
+}
+.check-survey .sect-02 {
+  margin-top: 4px;
+}
+.check-survey .sect-03 {
+  text-align: center;
+  margin-top: 9px;
+}
+.check-survey .sect-03 .cont-02 {
+  margin-top: 9px;
+}
+
+.check-survey .section-01 ul {
+  list-style: none;
+}
+
+.check-survey .section-01 li {
+  float: left;
+}
+
+.check-survey .cont-01 {
+  display: flex;
+  flex-direction: column;
+}
+
+.check-category {
+  margin-bottom: 60px;
+}
+.check-category .pagination {
+  cursor: default;
+  display: inline-block;
+  width: 100%;
+}
+.check-category .pagination ul {
+  list-style: none;
+  display: inline-block;
+}
+.check-category .pagination li {
+  float: left;
+  margin-right: 12px;
+}
+.check-category .pagination li:hover {
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.check-category .pagination .active {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.check-category .category {
+  border: 1px solid;
+  padding: 26px 32px;
+  margin: 22px 32px;
+}
+.check-question {
+  margin: 3px 32px;
+  padding: 0 32px;
+}
+.check-question .q-text {
+  margin-right: 20px;
+}
+
+.check-answer {
+  margin: 0 32px;
+}
+.check-answer .answer {
+  cursor: default;
+}
+
+.single-cont {
+  display: flex;
+  align-items: center;
+}
+.single-cont p {
+  margin-left: 8px;
+}
+.multi-cont {
+  display: flex;
+  align-items: center;
+}
+.multi-cont p {
+  margin-left: 8px;
+}
+
+.yes-no .cont-01 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.yes-no .cont-01 input {
+  margin: 0 9px;
+}
+
+.help {
+  background-color: #a3a2a2;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.help-text {
+  border: 1px solid #cbcbcb;
+  background: #f1f1f1;
+  width: 530px;
+  line-height: 27px;
+  padding: 23px 12px;
+}

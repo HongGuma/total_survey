@@ -1,0 +1,41 @@
+.insert-meta-data .sect-01 {
+  display: flex;
+  align-items: center;
+}
+
+.insert-meta-data .sect-01 p {
+  margin-left: 16px;
+}
+.insert-meta-data .sect-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.insert-meta-data .sect-02-cont-02 {
+  border: 1px solid;
+  margin-top: 20px;
+}
+.insert-meta-data .cont-01 {
+  display: flex;
+  flex-direction: row;
+  padding: 0 22px;
+  justify-content: space-between;
+  width: 100%;
+}
+.insert-meta-data .cont-01 p:first-child {
+  flex: 1 1 0;
+  margin-right: 16px;
+}
+.insert-meta-data .cont-01 p:last-child {
+  flex: 2 1 0;
+}
+
+.insert-meta-data .sect-03 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.insert-meta-data .sect-03 button {
+  margin: 0 12px;
+}
